@@ -1,0 +1,1 @@
+Le design pattern Singleton garantit qu'une classe n'a qu'une seule instance tout en fournissant un point d'accès global à cette instance.

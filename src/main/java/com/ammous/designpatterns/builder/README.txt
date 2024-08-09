@@ -1,0 +1,1 @@
+Oui, c'est vrai. L'annotation @Builder de Lombok est conçue pour automatiser la création du design pattern Builder. Lorsque vous utilisez @Builder sur une classe ou un constructeur, Lombok génère automatiquement le code nécessaire pour suivre ce pattern
