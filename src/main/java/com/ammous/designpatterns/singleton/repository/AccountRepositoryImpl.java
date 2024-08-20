@@ -45,7 +45,7 @@ public class AccountRepositoryImpl implements AccountRepository {
      ************************************************************/
     private static  AccountRepositoryImpl accountRepository;
 
-    public static AccountRepositoryImpl getInstance() {
+    public synchronized static AccountRepositoryImpl getInstance() {
        if (accountRepository == null)
                {
                    System.out.println("Singleton instantiation");
@@ -56,15 +56,34 @@ public class AccountRepositoryImpl implements AccountRepository {
 
 
     private Map<Long, BankAccount> bankAccountMap = new HashMap<>();
-    private long accountsCount = 0;
+    private long  accountsCount = 0;
 
+
+    // synchronizer la variable/l'objet
     @Override
     public BankAccount save(BankAccount bankAccount) {
-        long accountId = ++accountsCount;
+
+        long accountId;
+        synchronized (this){
+            accountId = ++accountsCount;
+        }
+        bankAccount.setAccountId(accountId);
+
+        synchronized (this){
+            bankAccountMap.put(accountId, bankAccount);
+        }
+        return bankAccount;
+    }
+
+    //synchronizer la méthode
+   /* @Override
+    public synchronized BankAccount save(BankAccount bankAccount) {
+
+        long    accountId = ++accountsCount;
         bankAccount.setAccountId(accountId);
         bankAccountMap.put(accountId, bankAccount);
         return bankAccount;
-    }
+    }*/
 
     @Override
     public List<BankAccount> findAll() {

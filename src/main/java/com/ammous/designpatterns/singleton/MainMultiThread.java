@@ -18,14 +18,13 @@ public class MainMultiThread {
 
         AccountRepositoryImpl accountRepository = AccountRepositoryImpl.getInstance();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 1000; i++) {
             new Thread(() -> {
                 accountRepository.populateData();
             }).start();
         }
         System.out.println("tape a character");
         System.in.read();
-        accountRepository.populateData();
 
 
         JsonSeriliazer<BankAccount> bankAccountJsonSeriliazer = new JsonSeriliazer<>();
