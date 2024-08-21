@@ -1,6 +1,7 @@
 package com.ammous.designpatterns.creational.scopeobject.singleton.repository;
 
-import com.ammous.designpatterns.singleton.model.BankAccount;
+
+import com.ammous.designpatterns.creational.scopeobject.singleton.model.BankAccount;
 
 import java.util.List;
 import java.util.Optional;

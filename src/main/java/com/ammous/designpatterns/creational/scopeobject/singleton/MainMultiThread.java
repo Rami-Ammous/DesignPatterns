@@ -1,7 +1,7 @@
 package com.ammous.designpatterns.creational.scopeobject.singleton;
 
-import com.ammous.designpatterns.singleton.model.AccountStatus;
-import com.ammous.designpatterns.singleton.model.BankAccount;
+import com.ammous.designpatterns.creational.scopeobject.singleton.model.AccountStatus;
+import com.ammous.designpatterns.creational.scopeobject.singleton.model.BankAccount;
 import com.ammous.designpatterns.creational.scopeobject.singleton.repository.AccountRepositoryImpl;
 import com.ammous.designpatterns.creational.scopeobject.singleton.util.JsonSeriliazer;
 

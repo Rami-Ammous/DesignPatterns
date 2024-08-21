@@ -1,9 +1,9 @@
 package com.ammous.designpatterns.creational.scopeobject.singleton.repository;
 
-import com.ammous.designpatterns.singleton.model.AccountStatus;
-import com.ammous.designpatterns.singleton.model.AccountType;
-import com.ammous.designpatterns.singleton.model.BankAccount;
-import com.ammous.designpatterns.singleton.model.BankDirector;
+import com.ammous.designpatterns.creational.scopeobject.singleton.model.AccountStatus;
+import com.ammous.designpatterns.creational.scopeobject.singleton.model.AccountType;
+import com.ammous.designpatterns.creational.scopeobject.singleton.model.BankAccount;
+import com.ammous.designpatterns.creational.scopeobject.singleton.model.BankDirector;
 
 import java.util.HashMap;
 import java.util.List;
