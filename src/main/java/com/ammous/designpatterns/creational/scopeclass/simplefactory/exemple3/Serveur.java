@@ -1,15 +1,16 @@
-package com.ammous.designpatterns.creational.scopeclass.factory.exemple1;
+package com.ammous.designpatterns.creational.scopeclass.simplefactory.exemple3;
 
 /**
  * @author Rami Ammous
  */
-public class PcGamer extends  Computer{
+public class Serveur extends Computer{
+
     private  String ram;
     private  String hdd;
     private  String cpu;
 
 
-    public PcGamer(String ram, String hdd, String cpu) {
+    public Serveur(String ram, String hdd, String cpu) {
         this.ram = ram;
         this.hdd = hdd;
         this.cpu = cpu;

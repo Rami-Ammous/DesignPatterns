@@ -1,4 +1,4 @@
-package com.ammous.designpatterns.creational.scopeclass.factory.exemple2;
+package com.ammous.designpatterns.creational.scopeclass.simplefactory.exemple2;
 
 /**
  * @author Rami Ammous

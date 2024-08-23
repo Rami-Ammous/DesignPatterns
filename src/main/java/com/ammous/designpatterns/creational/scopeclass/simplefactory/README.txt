@@ -8,4 +8,5 @@ Avantage : le moyen le plus simple pour gérer la création d'objets en spécifi
 
 Inconvenients :
 1 - Pour la création d'autres objets il faut modifier la classe Factory
-2 - pas de possibilité de créer automatiqument des familles d'objets de des combinaisons d'objets issues de plusieurs types d'usines
+2 - pas de possibilité de créer automatiqument des familles d'objets de des combinaisons
+d'objets issues de plusieurs types d'usines
